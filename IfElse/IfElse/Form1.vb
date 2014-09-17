@@ -12,8 +12,13 @@ Public Class Form1
         num2 = CDbl(st2)
 
         ' Your code here
-
-        txtResult.Text = "Not implemented yet"
+        If num1 > num2 Then
+            txtResult.Text = "The larger number is " & st1
+        ElseIf num2 > num1 Then
+            txtResult.Text = "The larger number is " & st2
+        Else
+            txtResult.Text = "THEY'RE F****** EQUAL"
+        End If
     End Sub
 
 End Class
